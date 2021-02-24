@@ -1,12 +1,12 @@
 let rootNode = document.getElementById('cakelistApp');
 
- let entryForm = new EntryForm((cakeSummary) => {
-     let book = new Book(cakeSummary.size, 
+ let cakeForm = new CakeEntryForm((cakeSummary) => {
+     let cake = new Cake(cakeSummary.size, 
                          cakeSummary.flavor, 
                          cakeSummary.shape, 
                          cakeSummary.price);
 
-     book.renderCake(rootNode);
+     cake.renderCake(rootNode);
  });
 
- entryForm.renderForm(rootNode);
+ cakeForm.renderForm(rootNode);
